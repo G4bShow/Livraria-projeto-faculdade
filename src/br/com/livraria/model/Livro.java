@@ -4,12 +4,12 @@ public class Livro {
 
     private String titulo;
     private String isbn;
-    private String preco;
+    private double preco;
     private int quantidadeEstoque;
     private Autor autor;
 
 
-    public Livro(String titulo, String isbn, String preco, int quantidadeEstoque, Autor autor) {
+    public Livro(String titulo, String isbn, double preco, int quantidadeEstoque, Autor autor) {
         this.titulo = titulo;
         this.isbn = isbn;
         this.preco = preco;
@@ -35,13 +35,12 @@ public class Livro {
         }
     }
 
-    public  bloean vender() {
-        if (quantidadeEstoque > 0 {
+    public boolean vender() {
+        if (quantidadeEstoque > 0) {
             quantidadeEstoque--;
             return true;
         }
         return false;
     }
 }
-
 
